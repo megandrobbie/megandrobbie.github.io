@@ -6,21 +6,41 @@ $(document).ready(function(){
     $("#meal").css("padding-left", "0");
   }
 
-  var thanks = function(noOfTimes){
+  // Smooth scroll to anchor links on page. Must be invoked on a per-page basis to limit behavior. Excludes links to '#'
+// params: minusOffsett / extraOffset: an optional param to offset the scrollpoint by any number of pixels, in addition to the offset top of the anchor
+  var smoothScrollToAnchor = function(minusOffset, extraOffset) {
 
-    var thanksHolder = $("#thanks-holder");
+    var extraOffset = extraOffset == null ? 0 : extraOffset;
+    var minusOffset = minusOffset == null ? 0 : minusOffset;
 
-    var thanksMessage = $(".thanks");
-
-    for (var i=0 ;i < noOfTimes ;i++){
-      var newThanksMessage = thanksMessage.clone()
-
-      thanksHolder.append(newThanksMessage);
-    }
-
+    $('a[href*=\\#]:not([href=\\#])').on('click', function(event){
+      event.preventDefault();
+      var hash = $(this).attr('href');
+      var page = $('html,body');
+      page.animate({scrollTop:$(hash).offset().top - minusOffset + extraOffset}, 500, function() {
+        window.location.hash = hash;
+      });
+    });
   }
 
-  thanks(200);
+  smoothScrollToAnchor();
+
+  // Used for site page after event is over...infinitely scrolls through 'thank you' messages
+  // var thanks = function(noOfTimes){
+  //
+  //   var thanksHolder = $("#thanks-holder");
+  //
+  //   var thanksMessage = $(".thanks");
+  //
+  //   for (var i=0 ;i < noOfTimes ;i++){
+  //     var newThanksMessage = thanksMessage.clone()
+  //
+  //     thanksHolder.append(newThanksMessage);
+  //   }
+  //
+  // }
+  //
+  // thanks(200);
 
   var mapStyles =
     [
