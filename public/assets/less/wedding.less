@@ -3,6 +3,30 @@
 // Use Lobster for Delicious fallback
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+// Glass Antiqua
+@font-face {
+  font-family: 'Glass Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GlassAntiqua-Regular.ttf') format('truetype');
+}
+
+// Elsie Swash Caps Black
+@font-face {
+  font-family: 'Elsie Swash Caps Black';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/ElsieSwashCaps-Black.ttf') format('truetype');
+}
+
+// Glass Swash Caps Regular
+@font-face {
+  font-family: 'Elsie Swash Caps Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ElsieSwashCaps-Regular.ttf') format('truetype');
+}
+
 // Gill Sans
 
 @font-face {
@@ -43,18 +67,18 @@
 
 // Delicious
 
-@font-face {
-    font-family: 'delicious';
-    src: url('../fonts/delicious-webfont.eot');
-    src: url('../fonts/delicious-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/delicious-webfont.woff2') format('woff2'),
-         url('../fonts/delicious-webfont.woff') format('woff'),
-         url('../fonts/delicious-webfont.ttf') format('truetype'),
-         url('../fonts/delicious-webfont.svg#deliciousregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+//@font-face {
+//    font-family: 'delicious';
+//    src: url('../fonts/delicious-webfont.eot');
+//    src: url('../fonts/delicious-webfont.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/delicious-webfont.woff2') format('woff2'),
+//         url('../fonts/delicious-webfont.woff') format('woff'),
+//         url('../fonts/delicious-webfont.ttf') format('truetype'),
+//         url('../fonts/delicious-webfont.svg#deliciousregular') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//
+//}
 
 // Palette
 
@@ -91,9 +115,11 @@
 }
 
 .delicious() {
-  font-family: 'delicious', 'Lobster', cursive;
+  //font-family: 'Glass Antiqua', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
+  //text-transform: uppercase;
 }
 
 // Mobile font mixins
@@ -577,11 +603,18 @@ body {
 
   }
 
+  .apostrophe {
+    position: relative;
+    display: inline-block;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+
   .welcome-section,
   #welcome-section {
 
     background-color: @deco-light-pink;
-
     .intro {
       //.content-full-width();
       width: 90%;
@@ -603,6 +636,7 @@ body {
         line-height: 175px;
         padding: 20px 0;
         margin: 20px auto;
+
       }
 
       .intro-message {

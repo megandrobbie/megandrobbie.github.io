@@ -382,26 +382,26 @@ $(document).ready(function(){
 
   if ("geolocation" in navigator) {
     /* geolocation is available */
-    navigator.geolocation.getCurrentPosition(function(position) {
-
-      // Ajax call for your weather
-      $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?lat="+ position.coords.latitude + "&lon=" + position.coords.longitude+ "&APPID=f705245bb8d87b81bd0ddc233d19ec41&units=imperial",
-        crossDomain: true,
-        dataType: 'jsonp'
-      }).success(function(data) {
-
-          yourWeather = data.weather[0].description;
-          yourTemp = data.main.temp + '&deg;' + ' f';
-
-          $("#your-weather").html(yourWeather);
-          $("#your-temp").html(yourTemp);
-
-        }).error(function(){
-          $("#your-weather").html(yourWeather);
-          $("#your-temp").html(yourTemp);
-        });
-      });
+    // navigator.geolocation.getCurrentPosition(function(position) {
+    //
+    //   // Ajax call for your weather
+    //   $.ajax({
+    //     url: "http://api.openweathermap.org/data/2.5/weather?lat="+ position.coords.latitude + "&lon=" + position.coords.longitude+ "&APPID=f705245bb8d87b81bd0ddc233d19ec41&units=imperial",
+    //     crossDomain: true,
+    //     dataType: 'jsonp'
+    //   }).success(function(data) {
+    //
+    //       yourWeather = data.weather[0].description;
+    //       yourTemp = data.main.temp + '&deg;' + ' f';
+    //
+    //       $("#your-weather").html(yourWeather);
+    //       $("#your-temp").html(yourTemp);
+    //
+    //     }).error(function(){
+    //       $("#your-weather").html(yourWeather);
+    //       $("#your-temp").html(yourTemp);
+    //     });
+    //   });
 
   } else {
     $("#your-weather").html(yourWeather);

@@ -1,5 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @font-face {
+  font-family: 'Glass Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GlassAntiqua-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Elsie Swash Caps Black';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/ElsieSwashCaps-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Elsie Swash Caps Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ElsieSwashCaps-Regular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'GillSans-Light';
   src: url('../fonts/GillSans-Light.eot');
   src: url('../fonts/GillSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GillSans-Light.woff2') format('woff2'), url('../fonts/GillSans-Light.woff') format('woff'), url('../fonts/GillSans-Light.ttf') format('truetype'), url('../fonts/GillSans-Light.svg#GillSans-Light') format('svg');
@@ -17,13 +35,6 @@
   font-family: 'GillSans-Bold';
   src: url('../fonts/GillSans-Bold.eot');
   src: url('../fonts/GillSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GillSans-Bold.woff2') format('woff2'), url('../fonts/GillSans-Bold.woff') format('woff'), url('../fonts/GillSans-Bold.ttf') format('truetype'), url('../fonts/GillSans-Bold.svg#GillSans-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'delicious';
-  src: url('../fonts/delicious-webfont.eot');
-  src: url('../fonts/delicious-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/delicious-webfont.woff2') format('woff2'), url('../fonts/delicious-webfont.woff') format('woff'), url('../fonts/delicious-webfont.ttf') format('truetype'), url('../fonts/delicious-webfont.svg#deliciousregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -155,9 +166,9 @@ body #alert-section .alert-container {
 }
 body #alert-section .alert-container .title {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 0 auto 40px auto;
@@ -267,6 +278,12 @@ body #alert-section .alert-container .message-item .display-listings:active {
   background-color: white;
   border: 10px double #75d0bb;
 }
+body .apostrophe {
+  position: relative;
+  display: inline-block;
+  margin-left: -20px;
+  margin-right: -20px;
+}
 body .welcome-section,
 body #welcome-section {
   background-color: #f7b7c7;
@@ -288,9 +305,9 @@ body #welcome-section .intro .intro-lead {
   display: block;
   border: 10px double #e9243c;
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 136px;
   line-height: 175px;
   padding: 20px 0;
@@ -320,9 +337,9 @@ body #welcome-section .intro .intro-message.btwn {
 body .welcome-section .intro .standout-text,
 body #welcome-section .intro .standout-text {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 32px auto;
@@ -440,9 +457,9 @@ body #countdown-section .countdown-container:after {
 }
 body #countdown-section .countdown-container .countdown {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 30px auto;
@@ -495,9 +512,9 @@ body #countdown-section .countdown-container #time-container .hours-container .n
 body #countdown-section .countdown-container #time-container .minutes-container .number,
 body #countdown-section .countdown-container #time-container .seconds-container .number {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 30px auto;
@@ -571,9 +588,9 @@ body #rsvp-section .form-container {
 }
 body #rsvp-section .form-container .rsvp-message {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 60px;
   margin: 30px auto 0 auto;
@@ -614,9 +631,9 @@ body #rsvp-section .form-container #submit-success-message .submit-message,
 body #rsvp-section .form-container #submit-failure-message .submit-message,
 body #rsvp-section .form-container #submit-decline-message .submit-message,
 body #rsvp-section .form-container #required-fields .submit-message {
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 35px;
   line-height: 35px;
 }
@@ -987,8 +1004,8 @@ body #rsvp-section .form-container form#form-test .guest-section .guest-containe
   border: 10px double #f7b7c7;
 }
 body #rsvp-section .form-container form#form-test .guest-section .guest-container .guest-number {
-  font-family: 'delicious', 'Lobster', cursive;
-  letter-spacing: 1px;
+  font-family: 'Elsie Swash Caps Black', cursive;
+  letter-spacing: 2.5px;
   font-size: 75px;
   line-height: 75px;
   font-weight: normal;
@@ -1106,9 +1123,9 @@ body #weather-section .weather-container .your-weather {
 }
 body #weather-section .weather-container .naples-weather .message,
 body #weather-section .weather-container .your-weather .message {
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 30px;
   line-height: 30px;
   margin: 0;
@@ -1323,9 +1340,9 @@ body #map-section .map-container #map-canvas {
 }
 body #map-section .map-container #map-canvas .marker-content .marker-info-header {
   color: #e9243c;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 25px;
 }
 body #map-section .map-container #map-canvas .marker-content .marker-website,
@@ -1578,9 +1595,9 @@ body #parking-section .scavenger-hunt-container .title,
 body #before-party-section .scavenger-hunt-container .title,
 body #scavenger-hunt-section .scavenger-hunt-container .title {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 0 auto 40px auto;
@@ -3553,9 +3570,9 @@ body #what-to-do-section .what-to-do-container .message-item .intro-message a:ho
 }
 body #what-to-do-section .what-to-do-container .message-item .intro-message.btwn.wedding-week,
 body #what-to-do-section .what-to-do-container .message-item .intro-message.btwn {
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   text-transform: none;
   font-size: 50px;
   margin: 50px 0;
@@ -3633,9 +3650,9 @@ body #what-to-do-section .what-to-do-container .message-item .activity-ideas #su
 body #what-to-do-section .what-to-do-container .message-item .activity-ideas #submit-decline-message .required-fields-container .submit-message,
 body #what-to-do-section .what-to-do-container .message-item .activity-ideas #choose-events .required-fields-container .submit-message,
 body #what-to-do-section .what-to-do-container .message-item .activity-ideas #required-fields .required-fields-container .submit-message {
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 35px;
   line-height: 35px;
 }
@@ -3823,9 +3840,9 @@ body #what-to-do-section .what-to-do-container .message-item .activity-ideas #we
 body #what-to-do-section .what-to-do-container .message-item .activity-ideas #wedding-events-rsvp .item .event-item .event-time,
 body #what-to-do-section .what-to-do-container .message-item .activity-ideas #wedding-events-rsvp .item .event-item .event-details {
   color: #75d0bb;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   display: inline;
   width: auto;
   font-size: 22px;
@@ -3995,9 +4012,9 @@ body #registry-section .alert-container {
 }
 body #registry-section .alert-container .title {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 0 auto 40px auto;
@@ -4038,9 +4055,9 @@ body #scavenger-hunt-section .scavenger-hunt-container {
 }
 body #scavenger-hunt-section .scavenger-hunt-container .title {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 0 auto 40px auto;
@@ -4086,9 +4103,9 @@ body #scavenger-hunt-section .scavenger-hunt-container #scavenger-list .list .li
   line-height: 35px;
 }
 body #scavenger-hunt-section .scavenger-hunt-container #scavenger-list .list .list-item.white {
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   color: white;
   font-size: 40px;
   line-height: 50px;
@@ -4102,9 +4119,9 @@ body #scavenger-hunt-section .scavenger-hunt-container .message-item .intro-mess
   margin: 35px auto;
 }
 body #scavenger-hunt-section .scavenger-hunt-container .message-item .intro-message .rule {
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   color: #e9243c;
   margin-right: 5px;
 }
@@ -4189,9 +4206,9 @@ body #slideshow-section .slideshow-container .gallery-title,
 body #insta-gallery-section .insta-gallery-container .gallery-title,
 body #slideshow-section .insta-gallery-container .gallery-title {
   color: white;
-  font-family: 'delicious', 'Lobster', cursive;
+  font-family: 'Elsie Swash Caps Black', cursive;
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   margin: 0 0 24px auto;
@@ -5449,9 +5466,9 @@ body #signature-section .signature-container .message .heart-container .heart {
     line-height: 25px;
   }
   body #scavenger-hunt-section .scavenger-hunt-container #scavenger-list .list .list-item.white {
-    font-family: 'delicious', 'Lobster', cursive;
+    font-family: 'Elsie Swash Caps Black', cursive;
     font-weight: normal;
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
     color: white;
     font-size: 28px;
     line-height: 38px;
